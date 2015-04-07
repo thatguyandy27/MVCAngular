@@ -1,0 +1,19 @@
+﻿@model MVCApp.Controllers.DynamicObject
+
+
+@{
+    Layout = null;
+}
+
+<h2>Dynamic View</h2>
+
+<h3>
+    @Model.Name
+</h3>
+
+<p>{{hello}}</p>
+
+<ul>
+    <li ng-repeat="item in dynamicList">{{item}}</li>
+
+</ul>
